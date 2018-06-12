@@ -11,6 +11,8 @@ This project seeks to create a knowledge base that can both contextualize and qu
 
 ## Contributing
 
+Contributing is subject to a strict Code of Conduct. You can [read the Code of Conduct](code-of-conduct.md) in English and German.
+
 At the moment, contributing is closed. I will open the project for contributions once I get some basic things set up (hopefully in a short period of time). This project will have a Code of Conduct and licensing for both the technology and the content. I will set up contribution how-tos for both technical and academic flows once things are stabilized.
 
 ## What is included?
