@@ -1,4 +1,4 @@
-[ [English](#contributor-covenant-code-of-conduct) | [Deutsch](#vereinbarung-übe-verhaltenskodex-für-mitwirkende) ]
+[ [English](#contributor-covenant-code-of-conduct) | [Deutsch](#vereinbarung-über-verhaltenskodex-für-mitwirkende) ]
 
 # Contributor Covenant Code of Conduct
 
