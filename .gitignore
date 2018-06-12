@@ -1,5 +1,10 @@
 # Data
-data/
+data/berlin-streets.csv
+data/germany-latest.osm.pbf
+data/berlin.poly
+data/firstnames.csv
+data/berlin.osm
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
