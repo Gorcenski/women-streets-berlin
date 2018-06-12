@@ -1,6 +1,6 @@
-## Obtaining Source Data
+## Obtaining Source Geo Data
 
-The source data for this project uses OpenStreetMap and its associated tools. Because the source data are very large, this README is provided to allow the user to obtain the data themselves and execute the pipeline locally.
+The source data for this project uses OpenStreetMap and its associated tools. Because the source data are large, this README is provided to allow the user to obtain the data themselves and execute the pipeline locally, or to adapt the process for your own city, if desired.
 
 The data acquisition process is as follows:
 
@@ -8,7 +8,7 @@ The data acquisition process is as follows:
 2. [Download .pbf data for Germany](#download-pbf-data-for-germany)
 3. [Download poly data for Berlin](#download-poly-data-for-berlin)
 4. [Process data to generate a .osm file](#process-data-to-generate-osm-file)
-5. Filter data and output to a .csv file
+5. [Filter data and output to a .csv file](#filter-data-and-output-to-csv-file)
 
 Detailed instructions are presented below. These instructions were adapted from [this post of the OSM forums](https://help.openstreetmap.org/questions/9816/the-best-way-to-extract-street-list).
 
@@ -33,7 +33,7 @@ Instructions for MacOS and Windows will follow.
 
 ### Download pbf data for Germany
 
-Download the OpenStreetMap .osm.pbf data file for Germany from [the European Geofabrik page](http://download.geofabrik.de/europe.html).
+Download the OpenStreetMap .osm.pbf data file for Berlin from [the Germany Geofabrik page](http://download.geofabrik.de/europe/germany.html).
 
 ### Download poly data for Berlin
 
@@ -43,16 +43,14 @@ Download [the raw .poly file for Berlin](https://github.com/JamesChevalier/citie
 
 Run the following command:
 
-```sh
-osmosis --read-pbf-fast germany-latest.osm.pbf file="germany-latest.osm.pbf" --bounding-polygon file="berlin.poly" --write-xml file="berlin.osm"
-```
+`osmosis --read-pbf-fast berlin-latest.osm.pbf file="berlin-latest.osm.pbf" --bounding-polygon file="berlin.poly" --write-xml file="berlin.osm"`
 
 ### Filter data and output to csv file
 
 Run the following command:
 
 ```sh
-osmfilter berlin.osm --keep="addr:country= and addr:city= and addr:street=" --ignore-depemdencies --drop-relations --dro
+osmfilter berlin.osm --keep="addr:country= and addr:city= and addr:street=" --ignore-dependencies --drop-relations --dro
 p-ways |osmconvert - --csv="@oname @id @lon @lat addr:country addr:city addr:street" > berlin-streets.csv
 ```
 

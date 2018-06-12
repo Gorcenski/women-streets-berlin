@@ -1,9 +1,6 @@
 # Data
-data/berlin-streets.csv
-data/germany-latest.osm.pbf
-data/berlin.poly
-data/firstnames.csv
 data/berlin.osm
+data/germany-latest.osm.pbf
 
 
 # Byte-compiled / optimized / DLL files
