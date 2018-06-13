@@ -6,7 +6,7 @@ The source data for this project uses OpenStreetMap and its associated tools. Be
 
 The data acquisition process is as follows:
 
-1. [Obtain OSMC Tools](#install-osmc-tools)
+1. [Obtain OSMC Tools and osmosis](#install-osmc-tools-and-osmosis)
 2. [Download .pbf data for Germany](#download-pbf-data-for-germany)
 3. [Download poly data for Berlin](#download-poly-data-for-berlin)
 
@@ -14,7 +14,7 @@ Detailed instructions are presented below. These instructions were adapted from 
 
 This process can likely be greatly simplified. However, until I test whether the simplification works I'm going to post instructions for what I know works.
 
-### Install OSMC Tools
+### Install OSMC Tools and Osmosis
 
 First, we have to install [OSMC Tools](https://github.com/ramunasd/osmctools).
 
@@ -27,7 +27,9 @@ autoreconf --install
 make install
 ```
 
-Alternatively, on Ubuntu you can simply `apt-get osmctools`.
+Alternatively, on Ubuntu you can run `apt-get install osmctools`.
+
+Next, install [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis). On Ubuntu/Debian run `apt-get install osmosis`.
 
 Instructions for MacOS and Windows will follow.
 
