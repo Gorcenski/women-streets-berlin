@@ -16,5 +16,5 @@ echo "Generating osm file. This will take several minutes..."
 osmosis --read-pbf-fast berlin-latest.osm.pbf file="berlin-latest.osm.pbf" --bounding-polygon file="berlin.poly" --write-xml file="berlin.osm"
 
 echo "Generating csv file..."
-osmfilter berlin.osm --keep="highway=*" --ignore-dependencies | osmconvert - --csv="@oname @id @lon @lat addr:country addr:city addr:street" > berlin-streets.csv
+osmfilter berlin.osm --keep="highway=*" --ignore-dependencies | osmconvert - --csv="@oname @id @lat @lon highway name" > berlin-streets.csv
 
