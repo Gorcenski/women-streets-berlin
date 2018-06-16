@@ -18,4 +18,7 @@ osmosis --read-pbf-fast berlin-latest.osm.pbf file="berlin-latest.osm.pbf" --bou
 echo "Generating csv file..."
 osmfilter berlin.osm --keep="highway=*" --ignore-dependencies --drop-relations --drop-nodes | osmconvert - --csv="@oname @id highway name" > berlin-streets.csv
 
+echo "Extracting street names and performing gender correlation..."
+python3 extract_street_names.py
 
+echo "Street name extraction complete. Street-name-gender data is now stored in streets.json."
