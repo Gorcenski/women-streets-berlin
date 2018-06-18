@@ -2,6 +2,8 @@
 data/berlin.osm
 data/germany-latest.osm.pbf
 
+# Hugo files
+web/dev/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
