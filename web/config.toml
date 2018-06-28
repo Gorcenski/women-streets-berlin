@@ -54,9 +54,9 @@ canonifyurls = true
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "categories"
-  name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  identifier = "index"
+  name = "Street Index"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-road\"></i>"
   url = "/categories"
 [[menu.main]]
   weight = 3

@@ -1,5 +1,6 @@
 <nav id="sidebar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
   <div class="sidebar-container">
+    <!--
     {{ with ($.Scratch.Get "authorPicture") }}
       <div class="sidebar-profile">
         <a href="{{ if $.Site.Params.sidebar.profile.url }}{{ $.Site.Params.sidebar.profile.url }}{{ else }}{{ "/#about" }}{{ end }}">
@@ -10,7 +11,7 @@
           <h5 class="sidebar-profile-bio">{{ . | markdownify }}</h5>
         {{ end }}
       </div>
-    {{ end }}
+    {{ end }} -->
     <ul class="sidebar-buttons">
       {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
     </ul>
