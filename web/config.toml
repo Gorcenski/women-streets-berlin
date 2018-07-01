@@ -57,7 +57,7 @@ canonifyurls = true
   identifier = "index"
   name = "Street Index"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-road\"></i>"
-  url = "/categories"
+  url = "/page/street-index/"
 [[menu.main]]
   weight = 3
   identifier = "tags"
